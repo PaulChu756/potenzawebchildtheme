@@ -1,0 +1,160 @@
+/*
+ Theme Name:   Potenza Web
+ Theme URI:    
+ Description:  Divi child theme 
+ Author:       Potenza Web
+ Author URI:   
+ Template:     Divi
+ Version:      1.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/* Custom Styles */
+
+.hidden { display: none !important; }	
+
+#footer-bottom {padding:8% 0;}
+
+/* Style Google Maps */
+
+.et_pb_map_container { 
+    filter: url("data:image/svg+xml;utf8,#grayscale"); 
+    filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%);
+}
+
+.et_pb_map { height: 100vh; }
+
+
+
+/* Style oomment form */
+#commentform textarea, #commentform input[type="text"], #commentform input[type="email"], #commentform input[type="url"] {
+    background-color: #fff;
+    border: 1px #111 solid;
+    
+}
+
+.submit.et_pb_button {
+color:#222 !important;
+border: none;
+}
+
+.submit.et_pb_button:hover {
+color:#999 !important;
+border: none;
+background:none;
+}
+
+/*------------------------------------------------*/
+/*--------------------[SIDEBAR]-------------------*/
+/*------------------------------------------------*/
+
+/* Remove sidebar divider */
+
+.container::before { display:none; } .et_pb_widget_area_right { border-left:0; }
+.container::before { display:none; } .et_pb_widget_area_left { border-right:0; }
+ 
+.option-2 .widgettitle {
+    background: #fff!important;
+    color: #111;
+    font-size: 14px;
+    text-transform: uppercase;
+    height: 33px;
+    line-height: 33px;
+    padding: 0 10px;
+    width: 100%;
+    border: 1px #111 solid;
+    margin-bottom: 14px;
+	}
+ 
+    /* sidebar search bar */
+        .option-2 .widget_search #searchsubmit {background-color: #111; border:1px #111 solid;}
+        .option-2 .widget_search input#searchsubmit {color: #fff;}
+        .option-2 .widget_search input#s {border: 1px solid #111;}
+
+		.et_right_sidebar #sidebar {
+    padding-left: 0;
+}
+
+
+/*------------------------------------------------*/
+/*-------------[BLOG SMALL IMAGES]----------------*/
+/*------------------------------------------------*/
+/*feature thumbnails alongside post titles on blog page*/
+ 
+   .blog_small_image .et_pb_posts .et_pb_post a img {
+            max-width: 300px!important;
+            float: left !important;
+            padding-right: 20px !important;}
+ 
+    @media only screen and (max-width: 980px) {
+        .blog_small_image .et_pb_posts .et_pb_post a img{
+            float:none !important;
+            max-width: 100%!important;}}
+
+	.blog_small_image  .et_pb_posts .et_pb_post { margin-bottom: 8%;}
+	
+	.blog_small_image_no_sidebar .et_pb_posts .et_pb_post {clear:both;margin-bottom:8%;}
+	
+	   .blog_small_image_no_sidebar .et_pb_posts .et_pb_post a img {
+            max-width: 350px!important;
+            float: left !important;
+            padding-right: 20px !important;}
+ 
+    @media only screen and (max-width: 980px) {
+        .blog_small_image_no_sidebar .et_pb_posts .et_pb_post a img{
+            float:none !important;
+            max-width: 100%!important;}}
+
+	.blog_small_image .et_pb_posts .et_pb_post { margin-bottom: 10%;}
+
+
+
+/* Responsive Styles Standard Desktop Only */
+@media all and (min-width: 981px) and (max-width: 1405px) {
+
+}
+
+/* Responsive Styles Desktop Only */
+@media all and (min-width: 981px) {
+
+
+}
+
+/* Responsive Styles 981px - 1100px */
+@media all and (min-width: 981px) and (max-width: 1100px) {
+
+}
+
+/* Responsive Styles Tablet And Below */
+@media all and (max-width: 980px) {
+
+}
+
+@media all and (max-width: 768px) {
+
+
+}
+
+/* Responsive Styles Smartphone Only */
+@media all and (max-width: 767px) {
+
+
+
+}
+
+/* Responsive Styles Smartphone Portrait */
+@media all and (min-width: 480px) {
+
+}
+
+
+/* Responsive Styles Smartphone Portrait */
+@media all and (max-width: 479px) {
+
+}
