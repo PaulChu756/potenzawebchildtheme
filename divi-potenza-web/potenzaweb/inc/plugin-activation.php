@@ -72,7 +72,7 @@ function my_theme_register_required_plugins() {
             'name'               => 'Yoast SEO',
             'slug'               => 'wordpress-seo',
             'required'           => false,
-            'force_activation'   => false,
+            'force_activation'   => true,
             'force_deactivation' => false,
 		),
 
@@ -80,15 +80,7 @@ function my_theme_register_required_plugins() {
             'name'               => 'All-in-One WP Migration',
             'slug'               => 'all-in-one-wp-migration',
             'required'           => false,
-            'force_activation'   => false,
-            'force_deactivation' => false,
-		),
-
-		array(
-            'name'               => 'Divi Builder',
-            'slug'               => 'all-in-one-wp-migration',
-            'required'           => false,
-            'force_activation'   => false,
+            'force_activation'   => true,
             'force_deactivation' => false,
 		),
 
@@ -98,7 +90,91 @@ function my_theme_register_required_plugins() {
 			'source'             => get_stylesheet_directory() . '/plugins/divi-booster.zip', // The plugin source.
 			'required'           => true, // If false, the plugin is only 'recommended' instead of required.
 			'version'            => '', // E.g. 1.0.0. If set, the active plugin must be this version or higher. If the plugin version is higher than the plugin version installed, the user will be notified to update the plugin.
-			'force_activation'   => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
+			'force_activation'   => true, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
+			'force_deactivation' => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins.
+			'external_url'       => '', // If set, overrides default API URL and points to an external URL.
+			'is_callable'        => '', // If set, this callable will be be checked for availability to determine if a plugin is active.
+		),
+
+		array(
+			'name'               => 'Divi extended column', // The plugin name.
+			'slug'               => 'divi_extended_column_layouts-8', // The plugin slug (typically the folder name).
+			'source'             => get_stylesheet_directory() . '/plugins/divi_extended_column_layouts-8.zip', // The plugin source.
+			'required'           => true, // If false, the plugin is only 'recommended' instead of required.
+			'version'            => '', // E.g. 1.0.0. If set, the active plugin must be this version or higher. If the plugin version is higher than the plugin version installed, the user will be notified to update the plugin.
+			'force_activation'   => true, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
+			'force_deactivation' => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins.
+			'external_url'       => '', // If set, overrides default API URL and points to an external URL.
+			'is_callable'        => '', // If set, this callable will be be checked for availability to determine if a plugin is active.
+		),
+
+		array(
+			'name'               => 'Divi Builder', // The plugin name.
+			'slug'               => 'divi-builder', // The plugin slug (typically the folder name).
+			'source'             => get_stylesheet_directory() . '/plugins/divi-builder.zip', // The plugin source.
+			'required'           => true, // If false, the plugin is only 'recommended' instead of required.
+			'version'            => '', // E.g. 1.0.0. If set, the active plugin must be this version or higher. If the plugin version is higher than the plugin version installed, the user will be notified to update the plugin.
+			'force_activation'   => true, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
+			'force_deactivation' => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins.
+			'external_url'       => '', // If set, overrides default API URL and points to an external URL.
+			'is_callable'        => '', // If set, this callable will be be checked for availability to determine if a plugin is active.
+		),
+
+		array(
+			'name'               => 'Divi Map Extended', // The plugin name.
+			'slug'               => 'dwd-map-extended', // The plugin slug (typically the folder name).
+			'source'             => get_stylesheet_directory() . '/plugins/dwd-map-extended.zip', // The plugin source.
+			'required'           => true, // If false, the plugin is only 'recommended' instead of required.
+			'version'            => '', // E.g. 1.0.0. If set, the active plugin must be this version or higher. If the plugin version is higher than the plugin version installed, the user will be notified to update the plugin.
+			'force_activation'   => true, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
+			'force_deactivation' => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins.
+			'external_url'       => '', // If set, overrides default API URL and points to an external URL.
+			'is_callable'        => '', // If set, this callable will be be checked for availability to determine if a plugin is active.
+		),
+
+		array(
+			'name'               => 'Gravity Forms', // The plugin name.
+			'slug'               => 'gravityforms_2.0.7.16', // The plugin slug (typically the folder name).
+			'source'             => get_stylesheet_directory() . '/plugins/gravityforms_2.0.7.16.zip', // The plugin source.
+			'required'           => true, // If false, the plugin is only 'recommended' instead of required.
+			'version'            => '', // E.g. 1.0.0. If set, the active plugin must be this version or higher. If the plugin version is higher than the plugin version installed, the user will be notified to update the plugin.
+			'force_activation'   => true, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
+			'force_deactivation' => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins.
+			'external_url'       => '', // If set, overrides default API URL and points to an external URL.
+			'is_callable'        => '', // If set, this callable will be be checked for availability to determine if a plugin is active.
+		),
+
+		array(
+			'name'               => 'PDF embedder Premium', // The plugin name.
+			'slug'               => 'pdfembedder-premium-2.7.5', // The plugin slug (typically the folder name).
+			'source'             => get_stylesheet_directory() . '/plugins/pdfembedder-premium-2.7.5.zip', // The plugin source.
+			'required'           => true, // If false, the plugin is only 'recommended' instead of required.
+			'version'            => '', // E.g. 1.0.0. If set, the active plugin must be this version or higher. If the plugin version is higher than the plugin version installed, the user will be notified to update the plugin.
+			'force_activation'   => true, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
+			'force_deactivation' => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins.
+			'external_url'       => '', // If set, overrides default API URL and points to an external URL.
+			'is_callable'        => '', // If set, this callable will be be checked for availability to determine if a plugin is active.
+		),
+
+		array(
+			'name'               => 'SEO Ultimate', // The plugin name.
+			'slug'               => 'seo-ultimate.7.6.5.9', // The plugin slug (typically the folder name).
+			'source'             => get_stylesheet_directory() . '/plugins/seo-ultimate.7.6.5.9.zip', // The plugin source.
+			'required'           => true, // If false, the plugin is only 'recommended' instead of required.
+			'version'            => '', // E.g. 1.0.0. If set, the active plugin must be this version or higher. If the plugin version is higher than the plugin version installed, the user will be notified to update the plugin.
+			'force_activation'   => true, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
+			'force_deactivation' => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins.
+			'external_url'       => '', // If set, overrides default API URL and points to an external URL.
+			'is_callable'        => '', // If set, this callable will be be checked for availability to determine if a plugin is active.
+		),
+
+		array(
+			'name'               => 'Use Any Font', // The plugin name.
+			'slug'               => 'use-any-font.4.6', // The plugin slug (typically the folder name).
+			'source'             => get_stylesheet_directory() . '/plugins/use-any-font.4.6.zip', // The plugin source.
+			'required'           => true, // If false, the plugin is only 'recommended' instead of required.
+			'version'            => '', // E.g. 1.0.0. If set, the active plugin must be this version or higher. If the plugin version is higher than the plugin version installed, the user will be notified to update the plugin.
+			'force_activation'   => true, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
 			'force_deactivation' => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins.
 			'external_url'       => '', // If set, overrides default API URL and points to an external URL.
 			'is_callable'        => '', // If set, this callable will be be checked for availability to determine if a plugin is active.
