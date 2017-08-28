@@ -67,6 +67,14 @@ function my_theme_register_required_plugins() {
             'force_activation'   => false,
             'force_deactivation' => false,
 		),
+
+		array(
+            'name'               => 'Yoast SEO',
+            'slug'               => 'yoast-seo',
+            'required'           => true,
+            'force_activation'   => false,
+            'force_deactivation' => false,
+		),
 	);
 
 
