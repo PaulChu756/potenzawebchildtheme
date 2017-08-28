@@ -60,15 +60,13 @@ function my_theme_register_required_plugins() {
             'force_deactivation' => false,
         ),
 		
-				array(
+		array(
             'name'               => 'Recent Posts Widget With Thumbnails',
             'slug'               => 'recent-posts-widget-with-thumbnails',
             'required'           => false,
             'force_activation'   => false,
             'force_deactivation' => false,
-        ),
-
-
+		),
 	);
 
 

@@ -79,7 +79,7 @@ function candy_customize_register($wp_customize) {
 	) );
 	
 	$wp_customize->add_setting( 'et_divi[footer_copyright_text]', array(
-		'default'       => '<a href="http://www.candythemes.com" target="_blank">CandyThemes</a> | Powered by <a href="http://www.wordpress.org" target="_blank">WordPress</a> & <a href="http://www.elegantthemes.com/affiliates/idevaffiliate.php?id=17835" target="_blank">Divi</a>',
+		'default'       => '<a href="potenzaweb.com" target="_blank">PotenzaWeb</a> | Powered by <a href="http://www.wordpress.org" target="_blank">WordPress</a> & <a href="http://www.elegantthemes.com/affiliates/idevaffiliate.php?id=17835" target="_blank">Divi</a>',
 		'type'			=> 'option',
 		'capability'	=> 'edit_theme_options',
 		'transport'		=> 'postMessage',

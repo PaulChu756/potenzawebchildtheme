@@ -59,7 +59,7 @@
 						echo et_get_option( 'footer_copyright_text' );
 					} else {
                 ?>
-					<a href="http://www.candythemes.com" target="_blank">Candy Themes</a> | Powered by <a href="http://www.wordpress.org" target="_blank">WordPress</a> &amp; <a href="http://www.candythemes.com/visit/ElegantThemes/Divi" target="_blank"  rel="nofollow">Divi</a> by <a href="http://www.candythemes.com/visit/ElegantThemes" target="_blank"  rel="nofollow">Elegant Themes</a><br/>
+					<a href="www.potenzaweb.com" target="_blank">Potenza Web Theme</a><br/>
 				<?php
                     }
 				?>
