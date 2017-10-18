@@ -85,6 +85,14 @@ function my_theme_register_required_plugins() {
 		),
 
 		array(
+            'name'               => 'Use Any Font',
+            'slug'               => 'use-any-font',
+            'required'           => false,
+            'force_activation'   => true,
+            'force_deactivation' => false,
+		),
+
+		array(
 			'name'               => 'Divi Booster', // The plugin name.
 			'slug'               => 'divi-booster', // The plugin slug (typically the folder name).
 			'source'             => get_stylesheet_directory() . '/plugins/divi-booster.zip', // The plugin source.
@@ -160,18 +168,6 @@ function my_theme_register_required_plugins() {
 			'name'               => 'SEO Ultimate', // The plugin name.
 			'slug'               => 'seo-ultimate.7.6.5.9', // The plugin slug (typically the folder name).
 			'source'             => get_stylesheet_directory() . '/plugins/seo-ultimate.7.6.5.9.zip', // The plugin source.
-			'required'           => true, // If false, the plugin is only 'recommended' instead of required.
-			'version'            => '', // E.g. 1.0.0. If set, the active plugin must be this version or higher. If the plugin version is higher than the plugin version installed, the user will be notified to update the plugin.
-			'force_activation'   => true, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
-			'force_deactivation' => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins.
-			'external_url'       => '', // If set, overrides default API URL and points to an external URL.
-			'is_callable'        => '', // If set, this callable will be be checked for availability to determine if a plugin is active.
-		),
-
-		array(
-			'name'               => 'Use Any Font', // The plugin name.
-			'slug'               => 'use-any-font.4.6', // The plugin slug (typically the folder name).
-			'source'             => get_stylesheet_directory() . '/plugins/use-any-font.4.6.zip', // The plugin source.
 			'required'           => true, // If false, the plugin is only 'recommended' instead of required.
 			'version'            => '', // E.g. 1.0.0. If set, the active plugin must be this version or higher. If the plugin version is higher than the plugin version installed, the user will be notified to update the plugin.
 			'force_activation'   => true, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
